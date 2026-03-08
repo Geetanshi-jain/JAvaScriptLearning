@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <textarea rows="15" cols="70" id="txtarea">enter the input</textarea>
+    <input type="button" value="submit your answer" onclick="getKey()" />
+    <br />
+    <input type="text" placeholder="enter your name..............." id="ipt">
+    <input type="button" value="submit" onmouseleave="getInputByMouse()" />
+    <div id="d1"></div>
+    <!--<style>
+        .box {
+            width: 300px;
+            height: 200px;
+            color: black;
+            border: 2px solid black;
+        }*/-->
+    </style>
+</head>
+
+<body>
+    <!-- <div class="cls" id=" d1">
+        <div class="box" id="box-1" onclick="myfunction()">box-1</div>
+        <div class="box random" id="box-2" onclick="mouseOver()">box-2</div>
+        <div class="box" id="box-4">box-4</div>-->
+
+
+    <script>
+        let div = document.getElementbyId('d1')
+        function getInputByMouse() {
+            let ipt = document.getElementbyId('ipt').value
+            div.innerHTML = `<h1>${ipt}</h1>`
+
+        }
+        console.log(ipt)
+    </script>
+
+
+
+</body>
+
+</html>

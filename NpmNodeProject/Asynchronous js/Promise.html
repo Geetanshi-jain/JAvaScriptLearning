@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 style="color:red"> Promise used </h1>
+
+<body>
+    <script>
+        let prom = new Promise((resolve, reject) => {
+            let isGreater = 2;
+            if (isGreater => 6)
+                resolve("promise is resolved")
+            else {
+                reject("promise is rejected")
+            }
+        })
+
+        let prom1 = new Promise((resolve, reject) => {
+            let isTrue = true;
+            if (isTrue)
+                resolve("promise is resolved: promise2")
+            else {
+                reject("promise is rejected Promise 2")
+            }
+        })
+
+        //Calling way one
+        /* prom.then((Data) => {
+             console.log(Data)
+         })
+         prom.catch((err) => { console.log(err) })
+         prom.finally(() => { console.log("finally called") })
+ 
+ 
+         prom1.then((Data1) => {
+             console.log(Data1)
+         })
+         prom1.catch((err1) => { console.log(err1) })
+         prom1.finally(() => { console.log() })
+         //calling way */
+        Promise.all([prom, prom1]).then((data) => {
+            console.log(data)
+        }).catch((err) => {
+            console.log(err)
+        }).finally("finally called.........")
+    </script>
+</body>
+
+</html>

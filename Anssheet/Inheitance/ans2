@@ -1,0 +1,88 @@
+const prompt = require("prompt-sync")();
+class Person {
+    _name;
+    DOB;
+    address;
+    #Avgage;
+    set_name(nm) {
+        this._name = nm;
+    }
+
+    setDOB(db) {
+        this.DOB = db;
+    }
+    setaddress(ads) {
+        this.address = ads;
+    }
+    setAvgage(ag) {
+        this.age = ag;
+    }
+    get_name() {
+        return this._name;
+    }
+
+    getDOB() {
+        return this.DOB
+    }
+    getaddress() {
+        return this.address;
+    }
+}
+
+class Account extends Person {
+    Accno;
+    accType;
+    balance = 1000000;
+    fedBack;
+    setAccno(acn) {
+        this.Accno = acn;
+    }
+    setAccType(act) {
+        this.AccType = act;
+    }
+    getAccno() {
+        return this.Accno;
+    }
+    getAccType() {
+        return this.AccType;
+    }
+    deposite() {
+        this.p = prompt("enter the amount for deposite")
+        this.balance = this.balance + this.p;
+        console.log("your money is sussfully  deposited in bank  ");
+    }
+    getBalance() {
+        this.fedBack = prompt("if you check   total amount so press yes");
+        if (this.fedBack === 'yes') {
+            console.log("total amt : ", this.Balance);
+        }
+        else {
+            console.log("some error found please try again!")
+        }
+    }
+    withdrawal() {
+        this.money = prompt("enter money that  you want to withdrawal");
+        if (this.balance >= this.money) {
+            console.log(` withdrawal money : ${this.money}
+                total money :${this.balance}-${this.money}`)
+        }
+    }
+}
+
+A = new Account();
+
+A.set_name("abcd")
+A.setDOB("5-12-2005");
+A.setAvgage(40);
+A.setaddress("near Holkar college indore")
+A.setAccType("saving");
+A.setAccno(14398754)
+console.log("Acc type :", A.getAccType());
+console.log("Acc no :", A.getAccno());
+A.getBalance();
+console.log("DOB  :", A.getDOB());
+console.log("Address :", A.getaddress());
+A.deposite();
+A.withdrawal();
+
+

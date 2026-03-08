@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            margin: 100px;
+            padding: 4px;
+            color: black;
+            background-color: beige;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--window event-->
+    <button id="btn" onclick="openWindow()">Click to registration</button>
+    <button id="btn1" onclick="closeWindow()">Close registration</button>
+    <script type="text/javascript">
+
+        var mywindow;
+        function openWindow() {
+            mywindow = window.open("EventForm.html", "", "width=500px ,height=500px");
+        }
+
+        function closeWindow() {
+            mywindow.close();
+        }
+    </script>
+</body>
+
+</html>

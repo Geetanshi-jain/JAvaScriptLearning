@@ -1,0 +1,106 @@
+/* Style for form container */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Style for input fields */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* Style for small text */
+.form-text {
+    margin-top: .25rem;
+    font-size: .875rem;
+    color: #6c757d;
+}
+
+/* Style for checkbox */
+.form-check-input {
+    position: relative;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    margin-left: -1.25rem;
+}
+
+/* Style for button */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+
+    user-select: none;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/*
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 350px;
+    background-color: #99b3cf;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}*/
+
+
+.container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    width: 250px;
+    height: 350px;
+    background-color: #99b3cf;
+    color: black;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+
+
+/* The rest of the CSS styles for the form remain the same */

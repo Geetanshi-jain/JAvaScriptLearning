@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id='btn'>getFile</button>
+    <div id="d">
+
+    </div>
+
+    <script>
+
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click',
+            function getData() {
+
+                fetch('data.txt').then(data => data.text())
+                    .then(d => document.getElementById('d').innerHTML = `<h2>${d}</h2>`)
+                    .catch(err => console.log(err))
+            });
+
+    </script>
+</body>
+
+</html>

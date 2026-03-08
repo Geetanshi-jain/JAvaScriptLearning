@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- write program using prompt function to take input of age as a value from the user and use alert to tell him if he can drive-->
+    <!--if Q1 use confirm to ask theuser if he wants to see the prompt again-->
+    <script>
+        let age = prompt("enter your age")
+        age = Number.parseInt(age);
+        let runAgain = true;
+        const canDrive = (age) => { return age >= 18 ? true : false; }
+
+        while (runAgain) {
+            let age = prompt("enter your age")
+            age = Number.parseInt(age);
+            /*int the previous question use console.err  if the user  enter age is negative*/
+            if (age < 0) {
+                console.error("please enter a valid age");
+                break;
+            }
+            if (canDrive(age)) {
+                document.write("you can Drive")
+                alert("you can Drive")
+            } else {
+                document.write("not Drive")
+                alert("you can not Drive")
+            }
+            runAgain = prompt("confirm do you want to run again")
+
+            /* let color = prompt("enter the backgroundcolor")
+             document.body.style.backgroundColor = color;*/
+
+        }
+
+
+
+    </script>
+</body>
+<h1> Take input age </h1>
+
+</html>

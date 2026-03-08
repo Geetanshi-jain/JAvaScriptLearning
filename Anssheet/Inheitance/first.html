@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+        let elm = document.getElementById("d1");
+        let elm1 = document.getElementById("d2");
+        console.log(elm);
+        console.log(elm1);
+        elm.innerText = "Hello, I am innerText and I am used for adding some text in the HTML element.";
+        elm1.innerHTML = '<p>Hello, I am innerHTML, and I am used for adding text and HTML tags.</p><h1>This is an h1 heading.</h1>';
+    </script>
+</body>
+
+</html>

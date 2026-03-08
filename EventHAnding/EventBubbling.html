@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-left: 100px;
+        }
+
+        #GrandParaent {
+            background-color: red;
+            height: 400px;
+            width: 60%;
+            margin-top: 30px;
+
+        }
+
+        #parent {
+            background-color: rgb(94, 203, 121);
+            height: 300px;
+            width: 70%;
+            margin-top: 30px;
+            border: 2px solid black;
+
+        }
+
+        #child {
+            background-color: rgb(94, 94, 203);
+            height: 200px;
+            width: 70%;
+            margin-top: 30px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="GrandParaent">Grrandparent
+
+        <div id="parent">parent
+            <div id="child">Child</div>
+        </div>
+    </div>
+</body>
+<script>
+    //Event Bubbling
+    let g = document.getElementById('GrandParaent');
+    let p = document.getElementById('parent');
+    let c = document.getElementById('child');
+    g.addEventListener('click', () => {
+        console.log("grand parent clicked");
+    }, true)
+
+    c.addEventListener('click', (e) => {
+        e.stopPropagation();
+        console.log("parent calling");
+    }, true)
+    c.addEventListener('click', () => {
+        console.log("child calling");
+    }, true)
+
+</script>
+
+</html>

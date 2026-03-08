@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> mouse event</h1>
+    <h2> onclick event</h2>
+    <!-- onclick example-->
+    <button onclick="fun()">Click me</button>
+    <!--ondbClick example-->
+    <button ondblclick="myfun()" value="click">Double click this paragraph</button>
+    <!--on mouse down-->
+    <button value="onmouseDown" onmousedown="mouseDown()">this set the color of this text is red</button>
+    <!--onmouseup-->
+    <button value="onmouseUp" onmousedown="mouseUp()">this set the color of this text is red</button>
+    <!--on mouse enter-->
+    <p id="demo">paragraph id</p>
+    <!--on mouse enter-->
+    <!--on mouseleave-->
+    <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="Davv.jpg" alt="Smiley" width="200"
+        height="200">
+    <!--onmousemove onmouseout-->
+    <div onmousemove="myfun(event)" onmouseout="clearCoor()">
+        <!--onmouseOver onmouseup-->
+    </div>
+    <p id="demo"></p>
+    <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</h1>
+
+
+
+    <script>
+        function fun() {
+            document.getElementById("demo").innerHTML = "hello world";
+        }
+        function myfun() {
+            document.getElementById("demo").innerHTML += "hello world";
+        }
+        function mouseDown() {
+            document.getElementById("demo").style.color = "red";
+        }
+        function mouseUp() {
+            document.getElementById("demo").style.color = "blue";
+        }
+        function onmouseenter(x) {
+            x.style.width = "300px";
+            x.style.height = "300px";
+        }
+
+        function bigImg(x) {
+            x.style.height = "64px";
+            x.style.width = "64px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "320px";
+            x.style.width = "320px";
+        }
+        function myfun(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            let coor = "coordinates: ( " + x + "," + y + ")";
+            document.getElementById("demo").innerHTML = coor;
+        }
+        function clearCoor() {
+            document.getElementById("demo").innerHTML = "";
+        }
+        function mouseOver() {
+            document.getElementById("demo").style.color = "red";
+        }
+        function mouseOut() {
+            document.getElementById("demo").style.color = "blue";
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

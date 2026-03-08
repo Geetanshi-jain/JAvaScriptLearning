@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="ulist">
+        <li>About us</li>
+        <li>Home</li>
+        <li>Contact us</li>
+        <li>Services</li>
+
+    </ul>
+    <script>
+        /* how to insert an new element using js?*/
+        // 1.Element.insertBefore()
+        //2.Elm.insertAfter()
+        let l = document.getElementById('ulist')
+        //create new Elm
+        let li = document.createElement('li')
+        li.textContent = "testimonials"
+        //position
+        let ps = l.firstElementChild.nextElementSibling.nextElementSibling
+        l.insertBefore(li, ps);
+        //2 Elm.insertAfter() not supported by many browser
+        let l1 = document.getElementById('ulist')
+        let li1 = document.ElementById('li')
+        //new elm to inserted after
+        let li = document.createElement('li')
+        li.textContent = "terms and conditions"
+        //position
+        let pos1 = li.firstElementChild.nextElementSibling
+        //insertAfter()
+        l.insertAfter('li', 'pos1')
+
+
+
+    </script>
+</body>
+
+</html>

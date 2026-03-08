@@ -1,0 +1,44 @@
+<!--//four function related to this
+//1.setTimingOut
+//2.cleareTimeOut
+//3.SetTimeInterval
+//4.CleareInterval
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Timing function in js</h1>
+    <button id="start" onclick="startId =setTimeout(start,2000)">start</button>
+    <button onclick="clearTimeout(startIntId)">StopInterval</button>
+    <div id="div">
+
+    </div>
+    <script>
+        function start() {
+            console.log("Hyyyyyyyyyyy")
+            document.write("hyyyyyyyyyyyyyy")
+        }
+
+
+        function startInterval() {
+            let div = document.getElementById('d')
+            div.innerHTML += `hyyyyyyyy Geetanshi<br/>`
+        }
+        let runAfter2000ms = () => {
+            setInterval(() => {
+                console.log("hyyyyyyh");
+            }, 2000)
+        }
+        runAfter2000ms()
+
+    </script>
+</body>
+
+</html>

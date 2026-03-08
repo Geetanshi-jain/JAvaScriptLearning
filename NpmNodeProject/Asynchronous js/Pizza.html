@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getCheese() {
+            return new Promise((res, rej) => {
+                if (res)
+                    res("snesse is geeting")
+                else {
+                    rej("chesse is out of Stock")
+                }
+            })
+        }
+        function makeDough() {
+            return new Promise((res, rej) => {
+                //if(res) res("dough is making")
+                //else
+                rej("flour is outter stock ")
+            })
+        }
+        function getPizza() {
+            return new Promise((res, rej) => {
+                setTimeout(() => {
+                    if (res) res("pizza is prepared")
+                    else
+                        rej("pizza is not prepared")
+                }, 2000)
+            })
+        }
+
+        //promise Chaning
+        getCheese().then((cheese) => {
+            console.log(cheese)
+            return makeDough()
+        }).then((dough) => {
+            console.log(dough)
+            return getPizza()
+        }).then((dough) => console.log(dough)).catch((err) => console.log(err))
+        //PromiseAll
+        /*Promise.all([getCheese(),makeDough(),getPizza()])*/
+
+        let dough = getCheese().then((cheese) => {
+            console.log(cheese)
+            return makeDough()
+        }).catch((err) => console.log(err))
+
+        let Pizza = dough.then((dough) => console.log(dough)).catch((err) => console.log(err))
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

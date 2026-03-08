@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 style="color:rebeccapurple">Making pizza 1.getCheese 2.makeDough 3.makePizza</h1>
+
+<body>
+    <script>
+        function getCheese(callback) {
+            setTimeout(() => {
+                callback()
+            }, 2000)
+        }
+        
+        function makeDough(callback1) {
+            setTimeout(() => {
+                callback1()
+            }, 2000)
+        }
+
+        function makepizza(callback2) {
+            setTimeout(() => {
+                callback2()
+            }, 2000)
+        }
+
+
+        getCheese(() => {
+            console.log("cheese is geeting")
+            makeDough(() => {
+                console.log("dough is making")
+                makepizza(() => {
+                    console.log("finally pizza is prepared")
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

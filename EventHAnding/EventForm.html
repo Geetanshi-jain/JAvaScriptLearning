@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="Event.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <marquee id="mark">
+        Please complete the registration process!
+    </marquee>
+    </div>
+    <div class="container">
+        <h2> Registration form</h2>
+        <div class="form-container">
+            <form action="studentData" method="get" name="myname" onsubmit="return validateForm()"
+                onclick="submitfunction()" \>
+                <div class="input-icon">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="first name" class="name" name="fname" id="fname1"
+                        onfocus="focusfun(this)" onblur="blurfun(this)" oninput="inputfun(this)"
+                        class="fa fa-user lock"></i>
+                    <input type="text" placeholder="last name" required class="name" name="lname"
+                        onfocus="focusfun(this)" onblur="blurfun(this)" oninvalid="alert('please fill the first name')">
+
+                </div>
+
+                <div class="input-icon">
+                    <i class="fa fa-envelope email"></i>
+                    <input type="text" placeholder="email" class="text-name" name="email" onfocus="focusfun(this)"
+                        onblur="blurfun(this)">
+                </div>
+
+                <div class="input-icon">
+                    <i class="fa fa-lock lock" class="text-name"></i>
+                    <input type="password" placeholder="password" class="text-name" name="password"
+                        onfocus="focusfun(this)" onblur="blurfun(this)" onchange="changefun(this)">
+                </div>
+
+
+
+                <div class="input-icon">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder=" confirm passwrd" class="text-name" name="cpassword"
+                        onfocus="focusfun(this)" onblur="blurfun(this)">
+                </div>
+
+
+
+                <div class="input-icon">
+                    <input type="radio" class="radio-button" name="r1">
+                    <label style="margin-right:10px">Male</label>
+
+                    <input type="radio" class="radio-button" name="r1">
+                    <label>Female</label>
+                </div>
+
+                <div class="input-icon">
+                    <select class="country" name="country" onfocus="focusfun(this)" onblur="blurfun(this)">
+                        <option>
+                            Select country
+                        </option>
+                        <option>India</option>
+                        <option>Bhutan</option>
+                        <option>Nepal</option>
+                        <option>Italy</option>
+                        <option>japan</option>
+                    </select>
+                    <div class="arrow">
+                    </div>
+
+                    <div class="input-icon">
+                        <input type="checkbox" class="check-button">
+                        <label>I accept term and condition</label><br>
+
+                    </div>
+
+                    <div class="input-name">
+                        <input type="submit" value="Register" class="text-name  button">
+                    </div>
+
+
+                    <script src="myscript.js"></script>
+            </form>
+        </div>
+    </div>
+    <div id="test" style="border:1px solid red;"></div>
+    <button class="cls" onclick="closewindow()">close form</div>
+</body>
+
+</html>

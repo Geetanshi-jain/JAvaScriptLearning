@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <input type="button" placeholder="forward" value="backward" onclick="forwardfun()">
+    <button onclick="goback()">Go Back</button>
+    <a href="newpage.html">newpafge</a>
+    <script>
+        function goback() {
+            window.history.back();
+        }
+        function goforward() {
+            window.history.forward();
+        }
+
+    </script>
+</body>
+
+</html>

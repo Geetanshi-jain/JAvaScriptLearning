@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#GrandParent {
+    background-color: rgb(94, 94, 203);
+    height: 300px;
+    width: 400px;
+    border: 2px solid black;
+
+}
+
+#parent {
+    background-color: rgb(94, 203, 121);
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+
+}
+
+#child {
+    background-color: rgb(94, 94, 203);
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+
+}

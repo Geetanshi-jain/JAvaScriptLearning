@@ -1,0 +1,21 @@
+h2 {
+    color: blue;
+
+}
+
+body {
+    background-color: rgb(223, 214, 216);
+}
+
+button {
+    background-color: white;
+    color: black;
+
+}
+
+div {
+    color: red;
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+}

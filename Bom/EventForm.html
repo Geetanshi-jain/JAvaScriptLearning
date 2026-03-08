@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="Event.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>please complete the registration process! </h1>
+    <div class="container">
+        <h2> Registration form</h2>
+        <div class="form-container">
+            <form action="studentData" method="get" \>
+                <div class="input-icon">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="first name" class="name" name="fname" id="fname">
+
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="last name" class="name" name="lname">
+
+                </div>
+
+                <div class="input-icon">
+                    <i class="fa fa-envelope email"></i>
+                    <input type="text" placeholder="email" class="text-name" name="email">
+                </div>
+
+                <div class="input-icon">
+                    <i class="fa fa-lock lock" class="text-name"></i>
+                    <input type="password" placeholder="password" class="text-name" name="password">
+                </div>
+
+
+
+                <div class="input-icon">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder=" confirm passwrd" class="text-name" name="cpassword">
+                </div>
+
+
+
+                <div class="input-icon">
+                    <input type="radio" class="radio-button" name="r1">
+                    <label style="margin-right:10px">Male</label>
+
+                    <input type="radio" class="radio-button" name="r1">
+                    <label>Female</label>
+                </div>
+
+                <div class="input-icon">
+                    <select class="country" name="country">
+                        <option>
+                            Select country
+                        </option>
+                        <option>India</option>
+                        <option>Bhutan</option>
+                        <option>Nepal</option>
+                        <option>Italy</option>
+                        <option>japan</option>
+                    </select>
+                    <div class="arrow">
+                    </div>
+
+                    <div class="input-icon">
+                        <input type="checkbox" class="check-button">
+                        <label>I accept term and condition</label><br>
+
+                    </div>
+
+                    <div class="input-name">
+                        <input type="submit" value="Register" class="text-name  button" onclick="SubmitEvent">
+                    </div>
+
+
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

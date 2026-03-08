@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="ul">
+        <li>Home</li>
+        <li id='abt'>About us</li>
+        <li>Contact us</li>
+        <li>Services</li>
+    </ul>
+    <script>
+        //let abt =document.getElementById('abt')
+        let l = document.getElementById('ul')
+        abt1 = l.firstElementChild.nextElementSibling
+        let li = document.createElement('li')
+        li.textContent = "testimonials"
+        l.replaceChild(li, abt1)
+        console.log(node)
+
+    </script>
+</body>
+
+</html>

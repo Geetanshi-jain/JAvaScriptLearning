@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <script>
+        //1.directly added to the body
+        let head = document.createElement("h1");
+        head.textContent = "hy i am a heading"
+        //heading id ="h1"
+        document.body.appendChild(head)
+        //2.added into an elem
+        let para = document.createElement('p')
+        para.textContent = "hy is a paragragh"
+        let div = document.getElementById('d1')
+        div.appendChild(para)
+        console.log(div)
+        //Added into an element by using node
+        let para1 = document.createElement('p')
+        let txt = document.createTextNode("Hy i am a para 2")
+        para1.append(txt)
+        let div1 = document.getElementById("d1")
+        div.appendChild(para1)
+        console.log(div1)
+
+    </script>
+</body>
+
+</html>

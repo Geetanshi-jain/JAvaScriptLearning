@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="D1">
+        this is Div......................
+    </div>
+    <script>
+        //we add the css id using js
+        /* let elm = document.getElementsByTagName('div')[0]
+         console.log(elm);
+         let elm1 = document.getElementById('D1');
+         console.log(elm1)
+         elm.id = "div1"
+         div.className = "divcls1"
+         elm.classList.add('classByClassList1');
+         elm.classList.remove('divClass1')
+         elm.classList.replace('divclass2')
+         elm.classList.toggle('divClassToggle')
+         console.log(elm)*/
+
+        alert("Enter the value of a")
+        let a = prompt("enter  a here :")
+        document.write(a);
+        a = Number.parseInt(a);
+        alert("you entered a of Type " + (typeof a))
+        document.write(a)
+        let write = confirm("Do you want to write it to the page")
+        if (write)
+            document.write(a)
+        else
+            document.write("plese allow me to write")
+
+
+    </script>
+
+</body>
+
+</html>

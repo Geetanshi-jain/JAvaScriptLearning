@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--beforebegin-->
+    <div id="div1">
+        <!--afterbegin-->
+        this is my div
+        <!--beforeend-->
+    </div>
+    <!-- afterend-->
+    <Script>
+        /* how to add elm using js*/
+        /*insertbefore(elm to be inserted,position)*/
+        let div = document.getElementById('div1')
+        div.insertAdjacentHTML('afterbegin', "<h1> Hyyyyyy </h1>")
+
+        div.insertAdjacentText('beforebegin', "Hello String")
+        // how to remove a child in */
+        div.removeChild();//it remove firstelm
+
+
+    </Script>
+</body>
+
+</html>
